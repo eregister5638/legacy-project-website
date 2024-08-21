@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>OSHP</title>
+   <style>
+      body {
+         margin: 0;
+         font-family: "Lato", sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         flex-direction: column;
+      }
+      #container {
+         text-align: center;
+         padding: 20px;
+         border-radius: 10px;
+      }
+      #container h1 {
+         font-size: 36px;
+         margin-bottom: 10px;
+      }
+      #container p.subheading {
+         font-size: 24px;
+         margin-top: 0;
+         color: black;
+      }
+      #mySidenav {
+         height: 100%;
+         width: 0;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         background-color: #111;
+         overflow-x: hidden;
+         transition: 0.5s;
+         padding-top: 60px;
+      }
+      #mySidenav a {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: #818181;
+         display: block;
+         transition: 0.3s;
+      }
+      #mySidenav a:hover {
+         color: #f1f1f1;
+      }
+      #mySidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+      }
+     
+      /* Desktop navigation bar */
+      #navbar {
+         display: none;
+         background-color: transparent;
+         width: 100%;
+         overflow: hidden;
+         position: fixed;
+         top: 0;
+         left: 0;
+         padding: 10px 20px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      #navbar a {
+         padding: 14px 15px;
+         text-decoration: none;
+         font-size: 16px;
+         color: black;
+         display: inline-block;
+      }
+      #navbar a:hover {
+         color: #818181;
+      }
+      #logo {
+         font-size: 25px;
+         font-weight: bold;
+         color: black;
+      }
+      /* Show the navbar and hide the hamburger menu on desktop view */
+      @media screen and (min-width: 768px) {
+         #navbar {
+            display: flex;
+         }
+         #mySidenav {
+            display: none;
+         }
+         #hamburger-menu {
+            display: none;
+         }
+      }
+      /* Show the hamburger menu and hide the navbar on mobile view */
+      @media screen and (max-width: 767px) {
+         #navbar {
+            display: flex;
+         }
+         #hamburger-menu {
+            display: block;
+            position: fixed;
+            top: 5px; /* Adjusted to move the hamburger icon up */
+            right: 20px; /* Move hamburger icon to the right */
+         }
+         #navbar a {
+            display: none;
+         }
+      }
+   </style>
+</head>
+<body>
+<!-- Desktop Navbar -->
+<div id="navbar">
+  <div id="logo">Legacy@ZSOM</div>
+  <div id="nav-links">
+      <a href="#">About Us</a>
+      <a href="#">Meet TLP</a>
+      <a href="#">Get Involved</a>
+      <a></a>
+
+  </div>
+</div>
+
+<!-- Mobile Hamburger Menu -->
+<div id="hamburger-menu">
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://eregister5638.github.io/legacy-project-website/about.html">About Us</a>
+  <a href="#">Meet TLP</a>
+  <a href="#">Get Involved</a>
+</div>
+
+
+</body>
+</html>
