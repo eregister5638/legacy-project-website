@@ -115,6 +115,23 @@
             display: none;
          }
       }
+
+      #hoverButton {
+         margin-top: 20px;
+         padding: 10px 20px;
+         font-size: 18px;
+         color: black;
+         background-color: white;
+         border: 2px solid black;
+         border-radius: 12px;
+         cursor: pointer;
+         transition: background-color 0.3s, color 0.3s;
+      }
+
+      #hoverButton:hover {
+         background-color: black;
+         color: white;
+      }
    </style>
 </head>
 <body>
@@ -123,8 +140,8 @@
   <a href="https://eregister5638.github.io/legacy-project-website/index.html"><div id="logo">Legacy@ZSOM</div></a>
   <div id="nav-links">
       <a href="https://eregister5638.github.io/legacy-project-website/about.html">About Us</a>
-      <a href="#">Meet TLP</a>
-      <a href="#">Get Involved</a>
+      <a href="https://eregister5638.github.io/legacy-project-website/meet.html">Meet TLP</a>
+      <a href="https://eregister5638.github.io/legacy-project-website/involved.html">Get Involved</a>
       <a></a>
 
   </div>
@@ -138,12 +155,13 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="https://eregister5638.github.io/legacy-project-website/about.html">About Us</a>
-  <a href="#">Meet TLP</a>
-  <a href="#">Get Involved</a>
+  <a href="https://eregister5638.github.io/legacy-project-website/meet.html">Meet TLP</a>
+  <a href="https://eregister5638.github.io/legacy-project-website/involved.html">Get Involved</a>
 </div>
 
 <div id="container">
    <h1 id="typewriter-effect">Welcome to the Legacy Project at ZSOM!</h1>
+   <a href="https://eregister5638.github.io/legacy-project-website/about.html"><button id="hoverButton">Learn More</button></a>
 </div>
 
 <script>
