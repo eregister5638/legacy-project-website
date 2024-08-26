@@ -100,7 +100,7 @@
             display: none;
          }
       }
-      /* Show the hamburger menu and hide the navbar on mobile view */
+      /* Show the hamburger menu and hide the navbar links on mobile view, but keep the logo visible */
       @media screen and (max-width: 767px) {
          #navbar {
             display: flex;
@@ -108,11 +108,14 @@
          #hamburger-menu {
             display: block;
             position: fixed;
-            top: 5px; /* Adjusted to move the hamburger icon up */
-            right: 20px; /* Move hamburger icon to the right */
+            top: 5px;
+            right: 20px;
          }
          #navbar a {
             display: none;
+         }
+         #logo {
+            display: block;
          }
       }
 
@@ -143,7 +146,6 @@
       <a href="https://eregister5638.github.io/legacy-project-website/meet.html">Meet TLP</a>
       <a href="https://eregister5638.github.io/legacy-project-website/involved.html">Get Involved</a>
       <a></a>
-
   </div>
 </div>
 
